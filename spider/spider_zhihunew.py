@@ -18,10 +18,13 @@ def main():
     # ******************  selenium Operations ***********************
     chromedriver = "/usr/local/bin/chromedriver"
     driver = webdriver.Chrome(chromedriver)   # open with Chrome
+    driver.get("https://www.zhihu.com/question/37787176") # 当一个颜值很高的程序员是怎样一番体验？
+    # driver.get("https://www.zhihu.com/question/27364360") # 有一双美腿是一种怎样的体验？
+    # driver.get("https://www.zhihu.com/question/28560777") # 女朋友很漂亮是一种什么体验？
     # driver.get("https://www.zhihu.com/question/35931586") # 你的日常搭配是什么样子？
     # driver.get("https://www.zhihu.com/question/61235373") # 女生腿好看胸平是一种什么体验？
     # driver.get("https://www.zhihu.com/question/28481779") # 腿长是一种什么体验？
-    driver.get("https://www.zhihu.com/question/19671417")  # 拍照时怎样摆姿势好看？
+    # driver.get("https://www.zhihu.com/question/19671417")  # 拍照时怎样摆姿势好看？
 
 
     # ****************** Scroll to the bottom, and do it 10 times *********
@@ -37,7 +40,7 @@ def main():
             except:
                 break
 
-    execute_times(5)
+    execute_times(10)
 
 
     result_raw = driver.page_source
