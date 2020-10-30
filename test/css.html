@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        h1 {
+            color: red; padding: 5px;
+        }
+        h2 {
+            color: green; padding: 5px;
+        }
+        li {
+            color: hotpink; padding: 5px;
+        }
+        .lei { 
+            color: rgb(136, 255, 0); padding: 5px;
+        }
+        #ol {
+            color: teal; padding: 5px;
+        }
+        img {
+            width: 512x;
+            height: 300px;
+        }
+        p::first-line {
+            background-color: tomato;
+            color: green;
+        }
+        div::first-letter {
+            background-color: red;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 选择器</h1>
+    <h2>基本选择器</h2>
+    <ul>
+        <li>通用选择器</li> <!-- * 通用覆盖面太大，一般较少使用-->
+        <li>元素选择器</li> <!-- html元素 css引用时候直接使用元素名称-->
+        <li class="lei">类选择器</li>   <!-- 给html元素定义类属性 css引用时候类名前加. -->
+        <li id="ol">id选择器</li>   <!-- 给html元素定义全局唯一id属性 css引用时候id名前加# -->
+    </ul>
+    <img src="htmltree.png" alt="html树状结构图">
+    <h2>复合选择器</h2>
+    <ul>
+        <li>交集选择器</li>
+        <li>并集选择器</li>
+        <li>后代选择器</li>
+        <li>子元素选择器</li>
+        <li>相邻元素选择器</li>
+        <li>通用兄弟选择器</li>
+    </ul>
+    <h2>伪选择器</h2>
+    <ul>
+        <li>伪元素选择器</li> <!-- ::first-line 伪（不存在的）元素选择器文本第一行 仅对块元素生效，可以指定仅对特定元素生效如：p::first-line ; ::first-letter仅对第一个元素生效，用法同::first-line; ::before; ::after; ::selection -->
+        <li>伪类选择器</li>
+    </ul>
+    <!-- lorem ipsum 乱数假文 用来填充 -->
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum commodi nihil harum cupiditate, recusandae vero molestiae saepe consectetur officiis blanditiis illo repudiandae nesciunt quibusdam ducimus natus eum aut neque inventore.</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi porro hic harum officiis fugit sunt numquam, voluptate magni? Tempora doloremque iste temporibus maiores, quae deserunt cupiditate delectus quod tenetur.</p>
+    <img src="elementselection.png" alt="伪类选择器">
+</body>
+</html>
